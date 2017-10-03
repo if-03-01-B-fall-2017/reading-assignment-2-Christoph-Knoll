@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html style="font-family: sans-serif">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cheatsheet by Christoph Knoll</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <article class="html">
+    <h1>HTML</h1>
+    <section>
+      <p>
+        <code>&lt;!DOCTYPE html&gt;</code> is used to declare a <strong>Html 5</strong> file.<br> All the content that has to do with <strong>html</strong> and the layout itself belongs into the <code>&lt;html&gt;&lt;/html&gt;</code> tag. <br> The sections
+        on the top of the page like <code>&lt;title&gt;</code> and the metainformation <code>&lt;meta charset="utf-8"&gt;</code> belong into the header.<br> Another crucial thing that is done in the header is linking to the <strong>CSS</strong> file which
+        will be requiered later on.<br>
+        <pre class="html">
+            <code>
+              &lt;head&gt;
+                &lt;meta charset="utf-8"&gt;
+                &lt;title&gt;Hello World!&lt;/title&gt;
+              &lt;/head&gt;
+            </code>
+          </pre>
+      </p>
+    </section>
+
+    <section>
+      <p>
+        The <code>&lt;body&gt;</code> contains the actual content of the Page. A short example of a webpage:
+        <pre class="html">
+            <code>
+              &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+                &lt;head&gt;
+                  &lt;meta charset="utf-8"&gt;
+                  &lt;title&gt;Hello World!&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                  &lt;article class="Hello_World"&gt;
+                    &lt;section&gt;
+                      &lt;h1&gt;Hello World&lt;/h1&gt;
+                      &lt;p&gt;&lt;em&gt;Hello&lt;/em&gt; &lt;strong&gt;World!&lt;/strong&gt;&lt;/p&gt;
+                      &lt;pre style="white-space: pre-line"&gt;
+                        &lt;code&gt;
+                          Hello
+                          World!
+                        &lt;/code&gt;
+                      &lt;/pre&gt;
+
+                    &lt;/section&gt;
+                  &lt;/article&gt;
+                &lt;/body&gt;
+              &lt;/html&gt;
+            </code>
+          </pre> Which looks like this: <br>
+        <iframe src="example.html" width="600" height="200"></iframe>
+      </p>
+    </section>
+  </article>
+
+  <article class="css">
+    <h1>CSS</h1>
+    <section>
+      <p>
+        We already have created the basic layout.<br> Now its time for styling the webpage using the external Stylesheet. In our case it's called <strong>stylesheet.css</strong>.<br>
+        <h3>HTML</h3>
+        <pre class="html">
+            <code>
+              &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+                &lt;head&gt;
+                  &lt;meta charset="utf-8"&gt;
+                  &lt;title&gt;Hello World!&lt;/title&gt;
+                  &lt;link rel="stylesheet" href="stylesheet.css"&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                  &lt;article class="Hello_World"&gt;
+                    &lt;section&gt;
+                      &lt;h1&gt;Hello World&lt;/h1&gt;
+                      &lt;p&gt;&lt;em&gt;Hello&lt;/em&gt; &lt;strong&gt;World!&lt;/strong&gt;&lt;/p&gt;
+                      &lt;pre&gt;
+                        &lt;code&gt;
+                          Hello
+                          World!
+                        &lt;/code&gt;
+                      &lt;/pre&gt;
+                    &lt;/section&gt;
+                  &lt;/article&gt;
+                &lt;/body&gt;
+              &lt;/html&gt;
+            </code>
+          </pre>
+        <h3>CSS</h3>
+        <pre class="css">
+            <code>
+              body {
+                font-family: monospace;
+              }
+              h1 {
+                border-left : 5px solid red;
+                text-indent: 5px;
+                background-color: lightgray;
+              }
+              article p {
+                text-align: center;
+                text-shadow: 2px 2px lightgrey;
+              }
+              article code {
+                  color: red;
+              }
+            </code>
+          </pre>
+        <iframe src="example_2.html" width="600" height="200"></iframe>
+      </p>
+    </section>
+  </article>
+
+</body>
+
+</html>
